@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>ModelViewer</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+
+        <div id="model-container" class="container"></div>
+
+        <div id="uploadModel" class="upload-section"></div>
+            <form id="upload-form" action="/upload">
+                <div class="upload-area" id="upload-area">
+                    <input type="file" id="file-input" name="model" required>
+                    <img src="./upload-icon.png" alt="Upload Icon" class="upload-icon" id="preview"/>
+                </div>
+            </form>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
